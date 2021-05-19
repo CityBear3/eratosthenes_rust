@@ -12,7 +12,7 @@ pub fn sieve_of_eratosthenes(n: usize) -> usize {
         primes.push(p);
 
         let mut q = p * p;
-        let mut r:Vec<usize> = Vec::new();
+        let mut r: Vec<usize> = Vec::new();
         while q < n + 1 {
             r.push(q);
             q += p;
@@ -25,7 +25,6 @@ pub fn sieve_of_eratosthenes(n: usize) -> usize {
 
     primes.len()
 }
-
 
 pub fn sieve_of_eratosthenes_2(n: usize) -> usize {
     let mut primes: Vec<usize> = Vec::new();
@@ -41,7 +40,7 @@ pub fn sieve_of_eratosthenes_2(n: usize) -> usize {
             primes.push(p);
 
             let mut q = p * p;
-            let mut r:Vec<usize> = Vec::new();
+            let mut r: Vec<usize> = Vec::new();
             while q < n + 1 {
                 r.push(q);
                 q += p;
